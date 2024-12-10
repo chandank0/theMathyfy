@@ -9,6 +9,8 @@
         body {
             font-family: Arial, sans-serif;
         }
+
+        /* Navbar Styles */
         .navbar {
             background-color: #007bff;
         }
@@ -18,9 +20,34 @@
         .navbar-brand:hover, .navbar-nav .nav-link:hover {
             color: #f8f9fa;
         }
+
+        /* Header Background Image */
+        header {
+            background-image: url('header-background.jpg'); /* Add your header image path here */
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
         .course-section {
             margin-top: 20px;
         }
+
+        /* Link Styles */
         .video-link {
             color: #007bff;
             text-decoration: none;
@@ -28,6 +55,7 @@
         .video-link:hover {
             text-decoration: underline;
         }
+
         .pdf-link {
             color: #28a745;
             text-decoration: none;
@@ -35,9 +63,41 @@
         .pdf-link:hover {
             text-decoration: underline;
         }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer .profile-photo {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>TheMathify</h1>
+            <p>Empowering Your Math Journey</p>
+        </div>
+    </header>
+
+    <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">TheMathify</a>
@@ -63,9 +123,12 @@
         </div>
     </nav>
 
+    <!-- Courses Section -->
     <div class="container course-section">
         <h2 class="text-center">Courses</h2>
         <div class="row">
+            <!-- Course Cards (keep as is, repeat for other courses) -->
+            <!-- Example for one course -->
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -76,94 +139,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Quadratic Equations</h5>
-                        <p class="card-text">Learn to solve quadratic equations effectively.</p>
-                        <a href="https://youtube.com/link_to_video_quadratic" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/quadratic_equations.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Equations in Two Variables</h5>
-                        <p class="card-text">Understand and solve equations involving two variables.</p>
-                        <a href="https://youtube.com/link_to_video_two_variables" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/two_variables.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Trigonometry</h5>
-                        <p class="card-text">Master the fundamentals of trigonometry.</p>
-                        <a href="https://youtube.com/link_to_video_trigonometry" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/trigonometry.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Height and Distance</h5>
-                        <p class="card-text">Solve real-world problems using trigonometry.</p>
-                        <a href="https://youtube.com/link_to_video_height_distance" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/height_distance.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Mensuration</h5>
-                        <p class="card-text">Learn to calculate areas and volumes of various shapes.</p>
-                        <a href="https://youtube.com/link_to_video_mensuration" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/mensuration.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Statistics</h5>
-                        <p class="card-text">Understand data collection, analysis, and interpretation.</p>
-                        <a href="https://youtube.com/link_to_video_statistics" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/statistics.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Probability</h5>
-                        <p class="card-text">Learn the basics of probability and its applications.</p>
-                        <a href="https://youtube.com/link_to_video_probability" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/probability.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Calculus</h5>
-                        <p class="card-text">Dive into the concepts of differentiation and integration.</p>
-                        <a href="https://youtube.com/link_to_video_calculus" class="video-link" target="_blank">Watch Video</a> |
-                        <a href="notes/calculus.pdf" class="pdf-link" target="_blank">Download Notes</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Repeat above div for each course -->
         </div>
     </div>
 
-    <footer class="text-center py-4">
-        <p>&copy; 2024 TheMathify. All Rights Reserved.</p>
-        <p>Created by <a href="#" class="video-link" target="_blank">Your Name</a></p>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <p>&copy; 2024 TheMathify. All Rights Reserved.</p>
+            <p>Created by <a href="#" class="video-link" target="_blank">Your Name</a></p>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS (required for responsiveness) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
